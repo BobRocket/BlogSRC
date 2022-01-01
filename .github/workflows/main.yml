@@ -41,5 +41,5 @@ jobs:
     - name: Deploy Hexo 
       run: |
         hexo c
-        
+        hexo g
         hexo d

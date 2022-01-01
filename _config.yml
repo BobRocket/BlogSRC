@@ -7,7 +7,7 @@ title: ScottSunの小窝
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: ScottSun
 language: zh-CN
 timezone: ''
 
@@ -44,7 +44,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -104,4 +104,3 @@ theme: fluid
 deploy:
   type: git
   repo: https://github.com/BobRocket/Bobrocket.github.io.git
-  branch: master
