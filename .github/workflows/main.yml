@@ -36,6 +36,7 @@ jobs:
         
     - name: Setup Git Infomation
       run: | 
+        git config --global core.autocrlf false
         git config --global user.name "BobRocket"
         git config --global user.email "1795979928@qq.com"
     - name: Deploy Hexo 
