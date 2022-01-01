@@ -40,6 +40,6 @@ jobs:
         git config --global user.email 1795979928@qq.com
     - name: Deploy Hexo 
       run: |
-        hexo clean
-        hexo generate 
-        hexo deploy
+        hexo c
+        hexo g
+        hexo d
