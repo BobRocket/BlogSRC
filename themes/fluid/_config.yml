@@ -503,7 +503,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: img/head.jpg
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
