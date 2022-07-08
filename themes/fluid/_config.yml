@@ -646,11 +646,11 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: ture
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis
-    type: disqus
+    type: livere
 
 
 #---------------------------
@@ -761,7 +761,7 @@ changyan:
 # Based on third-party service
 # See: https://www.livere.com
 livere:
-  uid: ''
+  uid: 'MTAyMC81Njc3Mi8zMzIzNg=='
 
 # Remark42
 # 需要自托管服务端
