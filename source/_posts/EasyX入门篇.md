@@ -2,6 +2,11 @@
 title: EasyX入门篇
 date: 2021-12-19 09:14:01
 tags:
+- EasyX
+- C++
+- 花里胡哨
+categories: 
+- 语言编程
 ---
 
 # EasyX入门篇
