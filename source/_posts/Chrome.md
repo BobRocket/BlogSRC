@@ -1,6 +1,7 @@
 ---
 title: RunningCheese Chrome 103.0稳定版
 date: 2022-07-09 14:11:27
+index_img: https://pic1.imgdb.cn/item/633ab80116f2c2beb10ac53b.png
 tags:
 - 干货
 - 浏览器
