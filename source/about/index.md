@@ -6,9 +6,7 @@ date: 2021-12-19 07:54:16
 ---
 ## 个人介绍
 
-准高一萌新，一只喜欢瞎搞的技术菜鸡，音游糊糊人（大部分项目因学业已弃坑）。
-
-[![BobRocket's GitHub stats](https://github-readme-stats.vercel.app/api?username=BobRocket&theme=flag-india)](https://github.com/BobRocket)![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=BobRocket&layout=compact&theme=flag-india)
+高一萌新，一只喜欢瞎搞的技术菜鸡，音游糊糊人（大部分项目因学业已弃坑）。
 
 
 ## 联系我
