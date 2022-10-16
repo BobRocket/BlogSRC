@@ -1,7 +1,7 @@
 ---
 title: EasyX入门篇
 date: 2021-12-19 09:14:01
-index_img: https://pic1.imgdb.cn/item/633abe8a16f2c2beb115f4e2.jpg
+index_img: https://pic1.imgdb.cn/item/634c167216f2c2beb1bb7b00.jpg
 tags:
 - EasyX
 - C++
