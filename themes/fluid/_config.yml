@@ -921,7 +921,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: ture
-    content: <hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>
+    content: <hr><p class="note note-warning">在下方留言申请加入我的友链，按如下格式提供信息：<br>博客名：Fluid<br>简介：Fluid 主题官方博客<br>链接：https://hexo.fluid-dev.com<br>图片：https://hexo.fluid-dev.com/img/favicon.png</p>
 
   # 评论插件
   # Comment plugin
