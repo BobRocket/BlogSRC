@@ -413,7 +413,7 @@ footer:
   # 国内大陆服务器的备案信息
   # For Chinese mainland website policy, other areas keep disable
   beian:
-    enable: true
+    enable: false
     # ICP证号
     icp_text: 京ICP证123456号
     # 公安备案号，不填则只显示ICP
@@ -752,8 +752,8 @@ waline:
 # Based on third-party service, insufficient support for regions outside China
 # http://changyan.kuaizhan.com
 changyan:
-  appid: ''
-  appkey: ''
+  appid: 'cywyS1oT6'
+  appkey: 'prod_6e6aa260f136aa48482afe187b54e138'
 
 # 来必力 Livere
 # 基于第三方的服务
