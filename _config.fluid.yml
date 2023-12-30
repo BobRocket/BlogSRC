@@ -428,12 +428,6 @@ footer:
       <span id="times">载入时分秒...</span>
       <script src="/js/duration.js"></script>
     </div>
-
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span>总访客&nbsp<span id="busuanzi_value_site_uv"></span>&nbsp人 &nbsp</span>
-    <span>访问总量&nbsp<span id="busuanzi_value_site_pv"></span>&nbsp次</span>
-    </div>
-
   '
   
   # 展示网站的 PV、UV 统计数
