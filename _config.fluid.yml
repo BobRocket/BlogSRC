@@ -18,11 +18,11 @@
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-favicon: /img/fluid.png
+favicon: /img/favicon.png
 
 # 用于苹果设备的图标
 # Icon for Apple touch
-apple_touch_icon: /img/fluid.png
+apple_touch_icon: /img/favicon.png
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
@@ -240,7 +240,7 @@ custom_css:
 # 网页访问统计
 # Analysis of website visitors
 web_analytics:  # 网页访问统计
-  enable: false
+  enable: true
 
   # 遵循访客浏览器"请勿追踪"的设置，如果开启则不统计其访问
   # Follow the "Do Not Track" setting of the visitor's browser
@@ -346,7 +346,7 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -428,12 +428,17 @@ footer:
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
   statistics:
-    enable: false
+    enable: true
 
     # 统计数据来源，使用 leancloud 需要设置 `web_analytics: leancloud` 中的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
     # Data source. If use leancloud, you need to set the parameter in `web_analytics: leancloud`
     # Options: busuanzi | leancloud
     source: "busuanzi"
+
+    # 页面显示的文本，{}是数字的占位符（必须包含)，下同
+    # Displayed text, {} is a placeholder for numbers (must be included), the same below
+    pv_format: "总访问量 {} 次"
+    uv_format: "总访客数 {} 人"
 
   # 国内大陆服务器的备案信息
   # For Chinese mainland website policy, other areas keep disable
@@ -456,7 +461,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: /img/default.png
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -528,7 +533,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/default.png
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -542,7 +547,7 @@ post:
     # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
     # Author, based on `author` field in front-matter, if not set, based on `author` value in hexo config
     author:
-      enable: false
+      enable: true
 
     # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
     # Post date, based on `date` field in front-matter, if not set, based on create date of .md file
@@ -572,7 +577,7 @@ post:
     # 浏览量计数
     # Number of visits
     views:
-      enable: false
+      enable: true
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud
@@ -581,7 +586,7 @@ post:
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
   # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
   updated:
-    enable: false
+    enable: true
 
     # 格式参照 ISO-8601 日期格式化
     # ISO-8601 date format
@@ -720,11 +725,11 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    type: valine
 
 
 #---------------------------
@@ -740,11 +745,12 @@ post:
 # Based on GitHub Issues
 # See: https://utteranc.es
 utterances:
-  repo:
+  repo: bobrocket/commit-utterances
   issue_term: pathname
   label: utterances
   theme: github-light
   theme_dark: github-dark
+  crossorigin: anonymous
 
 # Disqus
 # 基于第三方的服务，国内用户直接使用容易被墙，建议配合 Disqusjs
@@ -785,8 +791,8 @@ gitalk:
 # Based on LeanCloud
 # See: https://valine.js.org/
 valine:
-  appId:
-  appKey:
+  appId: W7ZwcAsDmgNlo1EcfWAYEHSi-gzGzoHsz
+  appKey: FgtdAgV6tTxyHKQ0eHyfaZyS
   path: window.location.pathname
   placeholder:
   avatar: 'retro'
@@ -891,7 +897,7 @@ discuss:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -902,7 +908,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -931,7 +937,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
@@ -948,18 +954,17 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/avatar.png
-  name: "Fluid"
-  intro: "An elegant theme for Hexo"
+  name: "一只爱整活的鸽子"
+  intro: "低调一点"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
-    - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/BobRocket', tip: 'GitHub' }
+    - { class: 'iconfont icon-bilibili-fill', link: 'https://space.bilibili.com/509457505?spm_id_from=333.1007.0.0', tip: '哔哩哔哩' }
 
 
 #---------------------------
@@ -970,7 +975,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: /img/default.png
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -981,7 +986,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -995,29 +1000,17 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://pic.imgdb.cn/item/62c579525be16ec74a579b15.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
-    }
-    - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
-    }
-    - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "/img/favicon.png"
+      title: "ReallyShow's Blog",
+      intro: "摸鱼-划水-躺平",
+      link: "https://shuxiangfan.github.io/",
+      avatar: "https://shuxiangfan.github.io/img/avatar.png"
     }
 
   # 当成员头像加载失败时，替换为指定图片
@@ -1027,7 +1020,7 @@ links:
   # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
   # Custom content at the bottom of the links
   custom:
-    enable: false
+    enable: true
     content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>'
 
   # 评论插件
